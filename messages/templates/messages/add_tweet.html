@@ -1,0 +1,13 @@
+{% extends 'base_page.html' %}
+
+{% block content %}
+<div class="formContainer" >
+	<form action="" method="post">{% csrf_token %}
+		<div class="ip_itms">
+			<label>{{ form.tweet_message.help_text }}</label>
+			<span>{{ form.tweet_message }}</span>
+		</div>
+		<div class="sbmt"><input type="submit" value="Submit" /><div>
+	</form>
+</div>
+{% endblock %}
